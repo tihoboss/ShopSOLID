@@ -8,8 +8,8 @@ interface ProductFilter {
 }
 
 class PriceRangeFilter implements ProductFilter {
-    private final int minPrice;
-    private final int maxPrice;
+    private static final int minPrice = 50;
+    private static final int maxPrice = 800;
 
     public PriceRangeFilter(int minPrice, int maxPrice) {
         this.minPrice = minPrice;
