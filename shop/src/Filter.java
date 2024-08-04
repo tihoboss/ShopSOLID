@@ -11,11 +11,6 @@ class PriceRangeFilter implements ProductFilter {
     private static final int minPrice = 50;
     private static final int maxPrice = 800;
 
-    public PriceRangeFilter(int minPrice, int maxPrice) {
-        this.minPrice = minPrice;
-        this.maxPrice = maxPrice;
-    }
-
     @Override
     public List<Product> filter(List<Product> products) {
         List<Product> filteredProducts = new ArrayList<>();
